@@ -13,9 +13,9 @@ lims = [-50 50];
 xp = x*cos(sinephas) + y*sin(sinephas);
 % Computar o seno
 img = sin(2*pi*freq*xp);
-figure; imagesc(img);
+figure(1); imshow(img);
 
 Y = fft2(img);
 
 Z = abs(Y);
-figure, imshow(Z,[]);
+figure(2); imshow(Z,[]);
